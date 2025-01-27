@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <img src="/BOTOL.png" />
+        <img src="./BOTOL.png" />
       </div>
       <nav className={styles.nav}>
         <a href="#shop">Shop</a>

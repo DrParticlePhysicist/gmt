@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
         <div style ={{height: 'auto', width:"100%", alignContent: 'center', objectFit: 'contained', margin: "20px"}}>
-          <img src="/Special bottle.png" alt= "Special bottle" style={{width: '100%',height:'auto',objectFit: 'cover'}} />
+          <img src="./Special bottle.png" alt= "Special bottle" style={{width: '100%',height:'auto',objectFit: 'cover'}} />
         </div>
         <FitnessJourney />
       <Footer />

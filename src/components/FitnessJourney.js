@@ -105,7 +105,7 @@ const FitnessJourney = () => {
             />
           )}
           <img
-            src={`/f${index + 1}.jpg`}
+            src={`./f${index + 1}.jpg`}
             alt={`Frame ${index + 1}`}
             style={{
               width: "100%",
