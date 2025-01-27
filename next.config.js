@@ -9,4 +9,7 @@ module.exports = {
   experimental: {
     esmExternals: true, // Enable ES Module compatibility
   },
+  output: "export",
+  assetPrefix: "./", // Ensures relative paths
+  trailingSlash: true, // Adds trailing slash for compatibility
 };
