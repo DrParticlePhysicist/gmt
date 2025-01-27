@@ -1,0 +1,95 @@
+.container {
+    position: relative;
+    min-height: 100vh;
+    background: url('/bgbottom') no-repeat center center;
+    background-size: cover;
+    padding: 2.5rem 0;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .heading p {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: #555;
+    letter-spacing: 0.1em;
+  }
+  
+  .heading h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 0.5rem;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .item-number {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #ff5e99;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .item-content {
+    flex: 1;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .item-content h3 {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .item-content p {
+    color: #555;
+  }
+  
+  .divider {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .item {
+      flex-direction: row;
+    }
+  
+    .item-content {
+      text-align: left;
+    }
+  
+    .divider {
+      display: block;
+      width: 2.5rem;
+      height: 0.25rem;
+      background: #ffa7c4;
+      flex-shrink: 0;
+    }
+  }
+  

@@ -1,0 +1,94 @@
+/* Product Section */
+.productSection {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Title and Subtitle */
+.titleContainer {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.viewMoreButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.viewMoreButton:hover {
+  background-color: #0056b3;
+}
+
+/* Grid Container */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 2rem; /* Space between cards */
+  justify-items: center; /* Center cards horizontally */
+}
+
+/* Card Styling */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  padding: 1rem;
+  text-align: center;
+  max-width: 300px; /* Ensures consistent card width */
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.image {
+  width: 100%; /* Fill the card's width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for the image */
+  margin-bottom: 1rem;
+}
+
+/* Product Name */
+.productName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+/* Learn More Button */
+.learnMoreButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learnMoreButton:hover {
+  background-color: #0056b3;
+}

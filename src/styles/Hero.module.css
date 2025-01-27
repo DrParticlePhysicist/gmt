@@ -1,0 +1,130 @@
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+  overflow: hidden; /* To hide animations outside the screen */
+  height: 860px;
+  width: 'auto';
+}
+/**/
+.circle {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #007bff;
+  border-radius: 60%;
+  position: relative;
+  top: 0;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.content {
+  z-index: 2;
+  position: relative;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family:'Familjen Grotesk' ;
+  word-break: 'for';
+  white-space: pre-wrap;
+  size: 96px;
+  line-height: 100px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin: 1rem 0;
+  font-family: 'Familjen Grotesk';
+}
+
+.inquiryButton {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.inquiryButton:hover {
+  background-color: #0056b3;
+}
+
+.bottle {
+  position: relative;
+  margin-top: 2rem;
+  z-index: 2;
+  height: 0; 
+}
+
+.bottleCap {
+  width: 186px;
+  position: relative;
+  top: 28%;
+  left: 50%;
+  transform: translate(-150%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  z-index: 3;
+}
+
+.bottleBody {
+  width: 186px;
+  position: relative;
+  margin-top: 47px; /* Align below the cap */
+  top: 28%;
+  left: 50%;
+}
+
+.leftCircle {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  z-index: 1;
+}
+
+.rightCircle {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  z-index: 1;
+}
+.leftCircle,
+.rightCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftCircle {
+  left: 10%;
+  top: 50%;
+}
+
+.rightCircle {
+  right: 10%;
+  top: 50%;
+}
+
+.leftCircle img,
+.rightCircle img {
+  width: 50px;
+  height: 50px;
+}
