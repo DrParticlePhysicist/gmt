@@ -2,10 +2,11 @@ import { motion } from 'framer-motion';
 import styles from '../styles/Hero.module.css';
 import { useState } from 'react';
 
-export default function Hero() {
+export default function Hero(props) {
   const [secondAnimation, setSecondAnimation] = useState(false);
   const [thirdAnimation, setThirdAnimation] = useState(false);
   const [jaadu ,setJaadu]= useState(false);
+  const { func } = props;
   return (
     <>
    {!jaadu && <section className={styles.hero}>
@@ -79,7 +80,7 @@ export default function Hero() {
 
         setSecondAnimation(true);
       }
-      setTimeout(() => setJaadu(true), 2000);
+      setTimeout(() =>{ setJaadu(true); func(true);}, 2000);
     }}
   />
 
