@@ -54,7 +54,7 @@ export default function Hero(props) {
         animate={thirdAnimation ? { scale:1, opacity: 1, y: -1000 } :{ opacity: 1, scale: 1 }}
         transition={{ delay: 1, duration: 1,ease: "easeInOut" }}
       >
-        <img src="./sbl.png" alt="Small Bottle Left" />
+        <img src="/sbl.png" alt="Small Bottle Left" />
       </motion.div>
       <motion.div
         className={styles.rightCircle}
@@ -62,14 +62,14 @@ export default function Hero(props) {
         animate={thirdAnimation ? { scale:1, opacity: 1, y: -1000 } :{ opacity: 1, scale: 1 }}
         transition={{ delay: 1, duration: 1, ease: "easeInOut" }}
       >
-        <img src="./sbr.png" alt="Small Bottle Right" />
+        <img src="/sbr.png" alt="Small Bottle Right" />
       </motion.div>
       </section>
 }
       <div className={styles.bottle}>
   {/* Bottle Cap */}
   <motion.img
-    src="./bottle-cap.png"
+    src="/bottle-cap.png"
     alt="Bottle Cap"
     className={styles.bottleCap}
     initial={{ y: -750, x: -95 }} // Starting position
@@ -86,7 +86,7 @@ export default function Hero(props) {
 
   {/* Bottle Body */}
   <motion.img
-    src="./bottle-body.png"
+    src="/bottle-body.png"
     alt="Bottle Body"
     className={styles.bottleBody}
     initial={{ y: -1600, x: -95 }} // Starting position
@@ -98,7 +98,7 @@ export default function Hero(props) {
 
 
       <section>
-      <img src="./Special Features.png" alt= "Special Features" style={{width: '100%',height:'auto',objectFit: 'cover'}} />
+      <img src="/Special Features.png" alt= "Special Features" style={{width: '100%',height:'auto',objectFit: 'cover'}} />
     </section>
     </>
   );
